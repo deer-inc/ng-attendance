@@ -134,6 +134,41 @@
           }
         }
       }
+    },
+    "@deer-inc/ng-attendance": {
+      "root": "projects/deer-inc/ng-attendance",
+      "sourceRoot": "projects/deer-inc/ng-attendance/src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/deer-inc/ng-attendance/tsconfig.lib.json",
+            "project": "projects/deer-inc/ng-attendance/ng-package.json"
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/deer-inc/ng-attendance/src/test.ts",
+            "tsConfig": "projects/deer-inc/ng-attendance/tsconfig.spec.json",
+            "karmaConfig": "projects/deer-inc/ng-attendance/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/deer-inc/ng-attendance/tsconfig.lib.json",
+              "projects/deer-inc/ng-attendance/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
     }
   },
   "defaultProject": "ng-attendance-manager"
