@@ -1,3 +1,8 @@
+[![Build Status](https://travis-ci.com/deer-inc/ng-attendance.svg?branch=master)](https://travis-ci.com/deer-inc/ng-attendance)
+[![Coverage Status](https://coveralls.io/repos/github/deer-inc/ng-attendance/badge.svg?branch=master)](https://coveralls.io/github/deer-inc/ng-attendance?branch=master)
+![npm](https://img.shields.io/npm/v/@deer-inc/ng-attendance.svg)
+![GitHub](https://img.shields.io/github/license/deer-inc/ng-attendance.svg)
+
 # NgAttendanceManager
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
