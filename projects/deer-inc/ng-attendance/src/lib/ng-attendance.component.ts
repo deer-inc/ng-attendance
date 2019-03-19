@@ -106,7 +106,7 @@ export class NgAttendanceComponent implements OnInit {
 
       const start = moment([item.start], 'HH:mm');
       const end = moment([item.end], 'HH:mm').subtract(
-        item.break || 0, 'm'
+        item.break || 0, 'minutes'
       );
       const total = end.diff(start, 'hours', true);
 
