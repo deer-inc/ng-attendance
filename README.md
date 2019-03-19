@@ -16,7 +16,7 @@ NgAttendance is an operation management table library by Angular Material.
 Please introduce Angular Material to the project in advance.
 
 ```bash
-yarn add @deer-inc/ng-attendance
+yarn add @deer-inc/ng-attendance ngx-material-timepicker moment
 ```
 
 app.module.ts
