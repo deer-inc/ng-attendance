@@ -1,31 +1,51 @@
 [![Build Status](https://travis-ci.com/deer-inc/ng-attendance.svg?branch=master)](https://travis-ci.com/deer-inc/ng-attendance)
 [![Coverage Status](https://coveralls.io/repos/github/deer-inc/ng-attendance/badge.svg?branch=master)](https://coveralls.io/github/deer-inc/ng-attendance?branch=master)
-![npm](https://img.shields.io/npm/v/@deer-inc/ng-attendance.svg)
+[![npm](https://img.shields.io/npm/v/@deer-inc/ng-attendance.svg)](https://www.npmjs.com/package/@deer-inc/ng-lp)
 ![GitHub](https://img.shields.io/github/license/deer-inc/ng-attendance.svg)
 
-# NgAttendanceManager
+# NgAttendance
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.3.
+NgAttendance is an operation management table library by Angular Material.
 
-## Development server
+## Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+[Demo](https://deer-inc.github.io/ng-attendance/)
 
-## Code scaffolding
+## Getting started
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Please introduce Angular Material to the project in advance.
+
+```bash
+yarn add @deer-inc/ng-attendance
+```
+
+app.module.ts
+```ts
+import { NgAttendance } from '@deer-inc/ng-attendance';
+
+...
+
+imports: [
+  NgAttendance
+]
+```
+
+app.component.html
+```html
+<ng-attendance></ng-attendance>
+```
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build @deer-inc/ng-attendance` to build the project.
+
+## Publishing
+
+After building your library with `ng build @deer-inc/ng-attendance`, go to the dist folder `cd dist/deer-inc/ng-attendance` and run `npm publish --access=public`.
 
 ## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Run `ng test @deer-inc/ng-attendance` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
 ## Further help
 
