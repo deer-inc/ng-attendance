@@ -1,8 +1,18 @@
 {
   "name": "@deer-inc/ng-attendance",
   "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/deer-inc/ng-attendance"
+  },
+  "license": "MIT",
   "peerDependencies": {
     "@angular/common": "^7.2.0",
-    "@angular/core": "^7.2.0"
+    "@angular/core": "^7.2.0",
+    "@angular/animations": "^7.2.9",
+    "@angular/cdk": "^7.3.4",
+    "@angular/material": "^7.3.4",
+    "moment": "^2.24.0",
+    "ngx-material-timepicker": "^3.0.1"
   }
 }

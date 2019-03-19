@@ -1,6 +1,10 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { NgAttendanceComponent } from './ng-attendance.component';
+import { MatCardModule, MatDividerModule, MatTableModule, MatSlideToggleModule } from '@angular/material';
+import { FormsModule } from '@angular/forms';
+import {NgxMaterialTimepickerModule} from 'ngx-material-timepicker';
+import { HttpClientModule } from '@angular/common/http';
 
 describe('NgAttendanceComponent', () => {
   let component: NgAttendanceComponent;
@@ -8,7 +12,16 @@ describe('NgAttendanceComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NgAttendanceComponent ]
+      declarations: [ NgAttendanceComponent ],
+      imports: [
+        MatCardModule,
+        MatDividerModule,
+        MatTableModule,
+        MatSlideToggleModule,
+        FormsModule,
+        NgxMaterialTimepickerModule,
+        HttpClientModule
+      ]
     })
     .compileComponents();
   }));

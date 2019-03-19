@@ -12,6 +12,9 @@
     "experimentalDecorators": true,
     "importHelpers": true,
     "types": [],
+    "paths": {
+      "moment/*": ["../../../node_modules/moment/*"]
+    },
     "lib": [
       "dom",
       "es2018"
